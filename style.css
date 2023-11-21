@@ -99,6 +99,9 @@ main{
 .active{
     background-color:hsl(25, 97%, 53%) ;
     color: white;
+    &:hover{
+        background-color: hsl(25, 97%, 53%);
+    }
 }
 
 .ratingcard__button{
