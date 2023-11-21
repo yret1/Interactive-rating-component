@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    background-color: hsl(0, 0%, 5%);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratingcard{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+
+    padding: 40px;
+    margin: 20px;
+
+    overflow: hidden;
+
+    background-color: hsl(216, 12%, 8%);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.ratingcard__favorite{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+
+    justify-self: flex-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(213, 19%, 18%) ;
+
+    list-style: none;
+}
+
+.ratingcard__infobox{
+    line-height: 20px;
+
+}
+.ratingcard__title{
+    padding-bottom: 20px;
+    color: white;
+}
+.ratingcard__text{
+    font-size: 15px;
+}
+.ratingcard--supportingtext{
+    color:hsl(217, 12%, 63%);
+}
+
+.ratingcard__values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ratingcard__option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 50%;
+
+    background-color:hsl(213, 19%, 18%) ;
+    height: 60px;
+    width: 60px;
+    &:hover{
+        background-color: hsl(217, 12%, 63%);
+        color: white;
+    }
+}
+
+.active{
+    background-color:hsl(25, 97%, 53%) ;
+    color: white;
+}
+
+.ratingcard__button{
+    height: 50px;
+
+    background-color: hsl(25, 97%, 53%);
+
+    font-size: 20px;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+    &:active{
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+    }
+}
+
+
+
+.ratingcard--succespage{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+
+    padding: 40px;
+    margin: 20px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    background-color: hsl(216, 12%, 8%);
+
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+
+.ratingcard__hero{
+    width: 50%;
+}
+.ratingcard__scorebox{
+    background-color: hsl(213, 19%, 18%);
+    padding: 7px;
+    border-radius: 20px;
+    width: 60%;
+    text-align: center;
+
+    color: hsl(25, 97%, 53%);
+}
+
+.text--success{
+    text-align: center;
+}
+@media (max-width:475px) {
+
+
+
+    .ratingcard__option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        border-radius: 50%;
+    
+        background-color:hsl(213, 19%, 18%) ;
+        height: 45px;
+        width: 45px;
+        &:hover{
+            background-color: hsl(217, 12%, 63%);
+            color: white;
+        }&:active{
+            background-color:hsl(25, 97%, 53%) ;
+            color: white;
+        }
+    }
+
+    .ratingcard__button{
+        height: 35  px;
+    
+        background-color: hsl(25, 97%, 53%);
+    
+        font-size: 18px;
+    
+        color: white;
+    
+        border: none;
+    
+        border-radius: 20px;
+        &:active{
+            background-color: white;
+            color: hsl(25, 97%, 53%);
+        }
+    }
+
+
+    .ratingcard{
+        height: 400px;
+        width: 400px;
+        border-radius: 30px;
+    
+        padding: 40px;
+        margin: 20px;
+    
+        overflow: hidden;
+    
+        background-color: hsl(216, 12%, 8%);
+    
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+
+    
+}

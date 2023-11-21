@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="rating.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <article class="ratingcard">
+      <li class="ratingcard__favorite">
+        <img src="/images/icon-star.svg" alt="star">
+      </li>
+      <section class="ratingcard__infobox">
+      <h2 class="ratingcard__title">How did we do?</h2>
+      <p class="ratingcard__text ratingcard--supportingtext">Please let us know how we did with your support request. All feedback is appriciated to help us improve our offering!</p>
+      </section>
+      <ul class="ratingcard__values">
+        <li class="ratingcard__option ratingcard--supportingtext" id="option1">1</li>
+        <li class="ratingcard__option ratingcard--supportingtext" id="option2">2</li>
+        <li class="ratingcard__option ratingcard--supportingtext" id="option3">3</li>
+        <li class="ratingcard__option ratingcard--supportingtext" id="option4">4</li>
+        <li class="ratingcard__option ratingcard--supportingtext" id="option5">5</li>
+      </ul>
+      <button type="submit" id="ratingbutton" class="ratingcard__button">SUBMIT</button>
+    </article>
+
+
+
+
+    <article class="ratingcard--succespage">
+      <img src="/images/illustration-thank-you.svg" alt="Thank you!" class="ratingcard__hero">
+      <section class="ratingcard__scorebox" id="scorecard">You selected 4 out of 5!</section>
+      <section class="ratingcard__infobox">
+      <h2 class="ratingcard__title text--success">Thank you!</h2>
+      <p class="ratingcard__text text--success ratingcard--supportingtext">We appriciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </section>
+    </article>  
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Simon Gustavsson</a>.
+  </div>
+</body>
+</html>
