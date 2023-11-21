@@ -71,8 +71,19 @@ const ratingSystem = (() => {
                 break
             }
 
-            return value
+            
         }
+
+        updateTxt(value)
+
+        
+        function updateTxt (x){
+
+            let scoreMsg = document.getElementById("scorecard");
+
+            scoreMsg.innerText = `You selected ${x} out of 5!`
+        }
+
 
 
 
@@ -87,17 +98,13 @@ const ratingSystem = (() => {
     const buttonPressed = () => {
 
 
-        let button = document.getElementById("#ratingbutton");
-        let msgBox = document.querySelector("succesmsg");
-
+        let button = document.getElementById("ratingbutton");
         button.addEventListener("click", displayUpdater)
 
         function displayUpdater(){
-
+            let msgBox = document.querySelector("#successmsg");
             msgBox.style.display = "flex";
-
         }
-
 
     }
 
